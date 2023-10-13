@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 moveDir;
 
 
+    
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
@@ -54,4 +55,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidBody.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
     }
+    
 }
+
+
+

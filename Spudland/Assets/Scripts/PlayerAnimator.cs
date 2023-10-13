@@ -22,13 +22,13 @@ public class PlayerAnimator: MonoBehaviour
     {
         if (playerMovement.moveDir.x != 0 || playerMovement.moveDir.y != 0)
         {
-            animator.SetBool("New Bool", true);
+            animator.SetBool("Move", true);
 
             SpriteDirectionChecker();
         }
         else
         {
-            animator.SetBool("New Bool", false);
+            animator.SetBool("Move", false);
         }
     }
 
